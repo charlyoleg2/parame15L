@@ -84,7 +84,7 @@ function pGeom(t: number, param: tParamVal): tGeom {
 					outName: `subpax_${designName}`,
 					face: `${designName}_face1`,
 					extrudeMethod: EExtrude.eLinearOrtho,
-					length: 1,
+					length: param.epaisseur,
 					rotate: [0, 0, 0],
 					translate: [0, 0, 0]
 				}
