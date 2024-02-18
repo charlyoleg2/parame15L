@@ -1,5 +1,5 @@
-// myRectangle.ts
-// a simple design (just a rectangle) for developing paxApps (desiXY-cli and desiXY-ui)
+// lettreL.ts
+// drawing the letter L in capital
 
 // step-1 : import from geometrix
 import type {
@@ -29,15 +29,21 @@ import {
 
 // step-2 : definition of the parameters and more (part-name, svg associated to each parameter, simulation parameters)
 const pDef: tParamDef = {
-	partName: 'myRectangle',
+	partName: 'lettreL',
 	params: [
 		//pNumber(name, unit, init, min, max, step)
-		pNumber('W1', 'mm', 80, 10, 200, 1),
-		pNumber('H1', 'mm', 60, 10, 200, 1)
+		pNumber('C', 'mm', 10, 1, 200, 1),
+		pNumber('E', 'mm', 30, 1, 200, 1),
+		pNumber('B', 'mm', 50, 1, 200, 1),
+		pNumber('AB', 'mm', 10, 1, 200, 1),
+		pNumber('epaisseur', 'mm', 10, 1, 200, 1)
 	],
 	paramSvg: {
-		W1: 'myRectangle.svg',
-		H1: 'myRectangle.svg'
+		C: 'lettreL.svg',
+		E: 'lettreL.svg',
+		B: 'lettreL.svg',
+		AB: 'lettreL.svg',
+		epaisseur: 'lettreL.svg'
 	},
 	sim: {
 		tMax: 100,
@@ -55,15 +61,17 @@ function pGeom(t: number, param: tParamVal): tGeom {
 		// step-4 : some preparation calculation
 		// step-5 : checks on the parameter values
 		// step-6 : any logs
-		rGeome.logstr += `myRectangle area: ${ffix(param.W1 * param.H1)} mm2\n`;
+		rGeome.logstr += `lettreL area: ${ffix(param.C + param.E)} x ${ffix(param.B + param.AB)} mm\n`;
 		// step-7 : drawing of the figures
 		// fig1
-		const ctrRect = contour(0, 0)
-			.addSegStrokeR(param.W1, 0)
-			.addSegStrokeR(0, param.H1)
-			.addSegStrokeR(-param.W1, 0)
+		const ctrL = contour(0, 0)
+			.addSegStrokeA(param.C + param.E, 0)
+			.addSegStrokeA(param.C + param.E, param.AB)
+			.addSegStrokeA(param.C, param.AB)
+			.addSegStrokeA(param.C, param.B + param.AB)
+			.addSegStrokeA(0, param.B + param.AB)
 			.closeSegStroke();
-		fig1.addMain(ctrRect);
+		fig1.addMain(ctrL);
 		// final figure list
 		rGeome.fig = {
 			face1: fig1
@@ -94,7 +102,7 @@ function pGeom(t: number, param: tParamVal): tGeom {
 		rGeome.sub = {};
 		// step-10 : final log message
 		// finalize
-		rGeome.logstr += 'myRectangle drawn successfully!\n';
+		rGeome.logstr += 'lettreL drawn successfully!\n';
 		rGeome.calcErr = false;
 	} catch (emsg) {
 		rGeome.logstr += emsg as string;
@@ -104,12 +112,12 @@ function pGeom(t: number, param: tParamVal): tGeom {
 }
 
 // step-11 : definiton of the final object that gathers the precedent object and function
-const myRectangleDef: tPageDef = {
-	pTitle: 'My Rectangle',
-	pDescription: 'A simple rectangle for developing paxApps (desiXY-cli and desiXY-ui)',
+const lettreLDef: tPageDef = {
+	pTitle: 'Ma lettre L',
+	pDescription: 'La lettre L ecrite en majuscule',
 	pDef: pDef,
 	pGeom: pGeom
 };
 
 // step-12 : export the final object
-export { myRectangleDef };
+export { lettreLDef };

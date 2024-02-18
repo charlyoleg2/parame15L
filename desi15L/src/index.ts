@@ -1,4 +1,4 @@
 // index.ts : entry point
 
-export * from './myGroup1/myCircle';
-export * from './myGroup1/myRectangle';
+export * from './myGroup1/lettreL';
+//export * from './myGroup1/myCircle';
