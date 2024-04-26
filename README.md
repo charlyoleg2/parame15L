@@ -11,10 +11,17 @@ This is the monorepo that contains a single *javascript* packages:
 
 1. desi15L: a sandbox of 3D-parts using *geometrix*
 
-The *UI* and *Cli* apps are generated automatically within *paxApps*.
+The *UI* and *Cli* apps associated to *desi15L* are generated automatically using [paxApps](https://github.com/charlyoleg2/parame_paxApps).
 
-A public instance of *desiXY-ui* is available on that [github-page](https://charlyoleg2.github.io/parame15L/).
-The *code source* is available on [github](https://github.com/charlyoleg2/parame15L).
+This repo is a simple designer-repository using [parametrix](https://charlyoleg2.github.io/parametrix/).
+
+
+Links
+-----
+
+- [desi15L-ui](https://charlyoleg2.github.io/parame15L/) : public instance of the UI
+- [sources](https://github.com/charlyoleg2/parame15L) : git-repository
+- [pkg](https://www.npmjs.com/package/desi15L) : desi15L as npm-package
 
 
 Prerequisite
@@ -48,4 +55,15 @@ npm -w desi15L run build
 npm -w desiXY-ui run dev
 ```
 
+Publish a new release
+---------------------
+
+```bash
+npm run versions
+git diff
+git commit -am 'increment sub versions'
+npm version patch
+git push
+git push origin v0.5.6
+```
 
