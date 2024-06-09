@@ -24,15 +24,28 @@ Links
 - [pkg](https://www.npmjs.com/package/desi15L) : desi15L as npm-package
 
 
-Prerequisite
-------------
+Usage for Makers
+----------------
 
-- [node](https://nodejs.org) version 20.10.0 or higher
-- [npm](https://docs.npmjs.com/cli/v7/commands/npm) version 10.2.4 or higher
+Parametrize and generate your 3D-files with the online-app:
+
+[https://charlyoleg2.github.io/parame15L/](https://charlyoleg2.github.io/parame15L/)
+
+Or use the UI locally:
+
+```bash
+npx desi15L-uis
+```
+
+Or use the command-line-interface (CLI):
+
+```bash
+npx desi15L-uis
+```
 
 
-Getting started
----------------
+Getting started for Dev
+-----------------------
 
 ```bash
 git clone https://github.com/charlyoleg2/parame15L
@@ -54,6 +67,13 @@ npm -w desi15L run check
 npm -w desi15L run build
 npm -w desiXY-ui run dev
 ```
+
+Prerequisite
+------------
+
+- [node](https://nodejs.org) version 20.10.0 or higher
+- [npm](https://docs.npmjs.com/cli/v7/commands/npm) version 10.2.4 or higher
+
 
 Publish a new release
 ---------------------
