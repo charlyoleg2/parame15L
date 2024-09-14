@@ -1,5 +1,5 @@
 // myCircle.ts
-// a simple design (just a circle) for developing paxApps (desiXY-cli and desiXY-ui)
+// a simple design (just a circle)
 
 // step-1 : import from geometrix
 import type {
@@ -102,7 +102,7 @@ function pGeom(t: number, param: tParamVal, suffix = ''): tGeom {
 // step-11 : definiton of the final object that gathers the precedent object and function
 const myCircleDef: tPageDef = {
 	pTitle: 'My Circle',
-	pDescription: 'A simple circle for developing paxApps (desiXY-cli and desiXY-ui)',
+	pDescription: 'A simple circle',
 	pDef: pDef,
 	pGeom: pGeom
 };
