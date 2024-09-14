@@ -19,6 +19,8 @@ Links
 - [desi15L-ui](https://charlyoleg2.github.io/parame15L/) : public instance of the UI
 - [sources](https://github.com/charlyoleg2/parame15L) : git-repository
 - [pkg](https://www.npmjs.com/package/desi15L) : desi15L as npm-package
+- [pkg-cli](https://www.npmjs.com/package/desi15L-cli) : desi15L-cli as npm-package
+- [pkg-uis](https://www.npmjs.com/package/desi15L-uis) : desi15L-uis as npm-package
 
 
 Getting started
@@ -34,5 +36,5 @@ npm -w desi15L run ci
 Dependencies
 ------------
 
-*Desi15L* runtime depends only on *Geometrix*. Use *desiXY-ui* WebUI or *desiXY-cli* CLI to visualize and export the designs in different formats like dxf, svg, gltf, stl, brep, step and others.
+*Desi15L* runtime depends only on *Geometrix*. Use *desi15L-ui* WebUI or *desi15L-cli* CLI to visualize and export the designs in different formats like dxf, svg, gltf, stl, brep, step and others.
 
