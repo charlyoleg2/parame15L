@@ -22,7 +22,9 @@
 			"default": "./dist/desi15L-cli.js"
 		}
 	},
-	"bin": "./dist/desi15L-cli.js",
+	"bin": {
+		"desi15L-cli": "dist/desi15L-cli.js"
+	},
 	"files": [
 		"dist/",
 		"!dist/**/*.d.ts",
