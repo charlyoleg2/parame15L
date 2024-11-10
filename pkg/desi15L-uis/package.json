@@ -1,7 +1,7 @@
 {
 	"name": "desi15L-uis",
 	"description": "mini-server for the web-app desi15L-ui",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"private": true,
 	"repository": {
 		"type": "git",
