@@ -2,7 +2,7 @@
 	"name": "desi15L",
 	"version": "0.5.5",
 	"description": "A collection of 3D-designs",
-	"private": true,
+	"private": false,
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/charlyoleg2/parame15L.git"
