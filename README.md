@@ -83,5 +83,5 @@ npm run versions
 git commit -am 'increment sub versions'
 npm version patch
 git push
-git push origin v0.5.6
+git push origin v0.5.7
 ```
