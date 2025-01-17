@@ -1,6 +1,6 @@
 {
 	"name": "parame15L",
-	"version": "0.5.6",
+	"version": "0.5.7",
 	"description": "The mono-repo for desi15L, desi15L-cli, desi15L-ui and desi15L-uis",
 	"private": true,
 	"repository": {
