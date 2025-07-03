@@ -1,7 +1,7 @@
 {
 	"name": "desi15L-ui",
 	"description": "sveltekit-ui for desi15L",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"private": true,
 	"repository": {
 		"type": "git",
